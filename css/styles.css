@@ -60,8 +60,7 @@ button {
 /*----- HEADER -----*/
 
 .header {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -69,6 +68,7 @@ button {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-container {
@@ -90,6 +90,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-accent {
@@ -105,6 +106,7 @@ button {
 
 .header-menu-link {
   color: var(--dark-text-color);
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -144,7 +146,7 @@ button {
 
 .main-section {
   background-color: var(--dark-text-color);
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .main-section-title {
@@ -156,7 +158,6 @@ button {
   letter-spacing: 0.02em;
   flex-shrink: 0;
   max-width: 496px;
-  padding-top: 188px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -175,6 +176,7 @@ button {
   border: none;
   display: block;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .main-section-button:hover,
@@ -185,6 +187,7 @@ button {
 /*----- ADVANTAGES -----*/
 
 .advantages-container {
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -204,8 +207,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .advantages-item {
@@ -230,6 +231,7 @@ button {
 /*----- PRODUCTS -----*/
 
 .products-container {
+  padding-bottom: 120px;
 }
 
 .products-title {
@@ -248,7 +250,6 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .products-list-item {
@@ -262,6 +263,7 @@ button {
 }
 
 .team-container {
+  padding: 120px 0;
 }
 
 .team-title {
@@ -272,24 +274,26 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-list-photo {
-  margin-bottom: 32px;
+  max-width: ;
 }
 
 .team-list-item {
   background-color: var(--primary-white-color);
   width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-container {
+  padding: 32px 16px;
 }
 
 .team-list-name {
@@ -307,7 +311,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -315,12 +318,10 @@ button {
 
 .footer {
   background-color: var(--dark-text-color);
+  padding: 100px 0;
 }
 
 .footer-container {
-  padding: 100px 0 100px 0;
-  max-width: 264px;
-  width: 100%;
 }
 
 .footer-logo {
@@ -331,6 +332,8 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -342,17 +345,20 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 16px;
+  max-width: 264px;
 }
 
 /*----- PORTFOLIO FILTERS -----*/
+
+.portfolio-projects-filters {
+  padding-top: 96px;
+}
 
 .portfolio-filters-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-filter-btn {
@@ -374,6 +380,7 @@ button {
 .portfolio-filter-btn:focus {
   background-color: var(--presed-state-color);
   color: var(--primary-white-color);
+  border: 1px solid transparent;
 }
 
 /*----- PORTFOLIO PROJECTS -----*/
@@ -381,6 +388,7 @@ button {
 .portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
   justify-content: space-between;
   padding-bottom: 120px;
   row-gap: 48px;
@@ -393,7 +401,12 @@ button {
 }
 
 .portfolio-project-img {
-  margin-bottom: 32px;
+}
+
+.project-name-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-project-subtitle {
@@ -402,7 +415,6 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -411,6 +423,4 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-bottom: 32px;
 }
