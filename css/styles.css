@@ -186,7 +186,7 @@ button {
 
 /*----- ADVANTAGES -----*/
 
-.advantages-container {
+.advantages {
   padding: 120px 0;
 }
 
@@ -230,7 +230,7 @@ button {
 
 /*----- PRODUCTS -----*/
 
-.products-container {
+.products {
   padding-bottom: 120px;
 }
 
@@ -260,9 +260,6 @@ button {
 
 .team {
   background: var(--light-mode-color);
-}
-
-.team-container {
   padding: 120px 0;
 }
 
@@ -352,6 +349,7 @@ button {
 
 .portfolio-projects-filters {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-filters-list {
